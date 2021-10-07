@@ -30,16 +30,21 @@ var beweegAlles = function () {
   // kogel
 
   // speler
-  var beweegSpeler = function draw()
-    if (keyIsDown(LEFT_ARROW)) {
-        spelerX = spelerX - 5;
-    if (keyIsDown(RIGHT_ARROW)) {
-        spelerX = spelerX - 5;
-    if (keyIsDown(UP_ARROW)) {
-        spelerX = spelerX + 5; 
-    if (keyIsDown(DOWN_ARROW)) {
-        spelerX = spelerX + 5;
-    };
+
+  if (keyIsDown(37)) {
+    spelerX = spelerX - 5;
+  }
+  if (keyIsDown(38)) {
+    spelerY = spelerY - 5;
+  }
+  if (keyIsDown(39)) {
+    spelerX = spelerX + 5;
+  }
+  if (keyIsDown(40)) {
+    spelerY = spelerY + 5;
+  }
+};
+
 
 /**
  * Checkt botsingen
@@ -64,12 +69,12 @@ var tekenAlles = function () {
   // kogel
 
   // speler
-  fill("white");
+  fill("violet");
   rect(spelerX - 25, spelerY - 25, 50, 50);
   fill("black");
   ellipse(spelerX, spelerY, 50, 50);
-  
- 
+
+
 
 
   // punten en health
