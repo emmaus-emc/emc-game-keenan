@@ -60,6 +60,16 @@ var tekenAlles = function () {
   rect(spelerX - 25, spelerY - 25, 50, 50);
   fill("black");
   ellipse(spelerX, spelerY, 50, 50);
+  
+  if (keyIsDown(LEFT_ARROW)) {
+        x -= 5;
+  if (keyIsDown(RIGHT_ARROW)) {
+        x -= 5;
+   if (keyIsDown(UP_ARROW)) {
+        x -= 5;
+  if (keyIsDown(DOWN_ARROW)) {
+        x -= 5;
+
 
   // punten en health
 
