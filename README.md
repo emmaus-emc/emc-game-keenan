@@ -1,7 +1,7 @@
 Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
 ## Mijn spel: *naam van het spel*
-Gemaakt door: *naam van leerling*
+Gemaakt door: Keenan Cheung
 
 ### Beschrijving
 Dit spel is een shooter. 
@@ -19,7 +19,7 @@ Geef aan met [x] welke onderdelen af zijn
 ### Basisstappen
 Optioneel: extra onderdelen, je kunt die overslaan<br>
 - [x] 1. maak index.html, style.css en script.js met canvas
-- [ ] 2. teken speler
+- [x] 2. teken speler
         - Maak de afmeting van de speler 50x50 pixels
         - Gebruik variabalen spelerX en spelerY als middelpunt van de speler
 - [ ] 3. beweeg speler met pijltjetoetsen
