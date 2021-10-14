@@ -55,6 +55,8 @@ var beweegAlles = function () {
 
   if (spelerY < 0) {spelerY = 0;}
   if (spelerX < 0) {spelerX = 0;}
+  if (spelerY > 720) {spelerY = 720;}
+  if (spelerX > 1280) {spelerX = 1280;}
 };
 
 /**
