@@ -29,13 +29,15 @@ var vijandY = 200; // y-positie van speler
  */
 var beweegAlles = function () {
   // vijand
-  ellipse(200, vijandY, 50, 50);
-  if (vijandY > 400) {
-        speed = -1 ;}
-  if (vijandY < 7) {
-        speed = 10 ;}
+var speed = 2;
 
+ vijandY = vijandY + speed;
 
+  if (vijandY > 720) {
+     speed = -10;}
+  if (vijandY < 0) {
+     speed = 10 ;}
+};
   // kogel
 
   // speler
