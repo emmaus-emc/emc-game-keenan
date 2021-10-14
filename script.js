@@ -29,6 +29,12 @@ var vijandY = 200; // y-positie van speler
  */
 var beweegAlles = function () {
   // vijand
+  ellipse(200, vijandY, 50, 50);
+  if (vijandY > 400) {
+        speed = -1 ;}
+  if (vijandY < 7) {
+        speed = 10 ;}
+
 
   // kogel
 
@@ -46,8 +52,10 @@ var beweegAlles = function () {
   if (keyIsDown(40)) {
     spelerY = spelerY + 5;
   }
-};
 
+  if (spelerY < 0) {spelerY = 0;}
+  if (spelerX < 0) {spelerX = 0;}
+  
 
 /**
  * Checkt botsingen
@@ -61,11 +69,17 @@ var verwerkBotsing = function () {
 
 };
 
+
+
+
+
 /**
  * Tekent spelscherm
  */
 var tekenAlles = function () {
   // achtergrond
+  fill("skyblue");
+  rect(0,0,1280,720);
 
   // vijand
   fill("red");
@@ -81,6 +95,8 @@ var tekenAlles = function () {
   rect(spelerX - 25, spelerY - 25, 50, 50);
   fill("black");
   ellipse(spelerX, spelerY, 50, 50);
+
+
 
 
 
