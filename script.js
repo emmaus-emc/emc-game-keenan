@@ -29,17 +29,13 @@ var vijandY = 200; // y-positie van speler
  */
 var beweegAlles = function () {
   // vijand
-  var speed = 4;
 
-  vijandY = vijandY + speed;
+  vijandY = vijandY + 10;
 
   if (vijandY > 720) {
-    speed = -10;
+    vijandY =0;
   }
 
-  if (vijandY < 0) {
-    speed = 10;
-  }
 
   // kogel
 
