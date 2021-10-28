@@ -29,13 +29,14 @@ var vijandY = 200; // y-positie van speler
  */
 var beweegAlles = function () {
   // vijand
-  var speed = 2;
+  var speed = 4;
 
   vijandY = vijandY + speed;
 
   if (vijandY > 720) {
     speed = -10;
   }
+
   if (vijandY < 0) {
     speed = 10;
   }
