@@ -29,15 +29,17 @@ var vijandY = 200; // y-positie van speler
  */
 var beweegAlles = function () {
   // vijand
-var speed = 2;
+  var speed = 2;
 
- vijandY = vijandY + speed;
+  vijandY = vijandY + speed;
 
   if (vijandY > 720) {
-     speed = -10;}
+    speed = -10;
+  }
   if (vijandY < 0) {
-     speed = 10 ;}
-};
+    speed = 10;
+  }
+
   // kogel
 
   // speler
@@ -55,10 +57,10 @@ var speed = 2;
     spelerY = spelerY + 5;
   }
 
-  if (spelerY < 0) {spelerY = 0;}
-  if (spelerX < 0) {spelerX = 0;}
-  if (spelerY > 720) {spelerY = 720;}
-  if (spelerX > 1280) {spelerX = 1280;}
+  if (spelerY < 0) { spelerY = 0; }
+  if (spelerX < 0) { spelerX = 0; }
+  if (spelerY > 720) { spelerY = 720; }
+  if (spelerX > 1280) { spelerX = 1280; }
 };
 
 /**
@@ -83,7 +85,7 @@ var verwerkBotsing = function () {
 var tekenAlles = function () {
   // achtergrond
   fill("skyblue");
-  rect(0,0,1280,720);
+  rect(0, 0, 1280, 720);
 
   // vijand
   fill("red");
