@@ -123,7 +123,13 @@ var tekenAlles = function () {
  * anders return false
  */
 var checkGameOver = function () {
-  return false;
+  if (HP<0) {
+    return true;
+  } else {
+    return false;
+  }
+ 
+  
 };
 
 /* ********************************************* */
@@ -159,6 +165,9 @@ function draw() {
   }
   if (spelStatus === GAMEOVER) {
     // teken game-over scherm
+    fill("white")
+    textSize(40);
+    text("kaas", 400, 400)
 
   }
 }
