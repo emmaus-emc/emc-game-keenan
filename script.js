@@ -33,7 +33,7 @@ var beweegAlles = function () {
   vijandY = vijandY + 10;
 
   if (vijandY > 720) {
-    vijandY =0;
+    vijandY = 0;
   }
 
 
@@ -67,9 +67,13 @@ var beweegAlles = function () {
  */
 var verwerkBotsing = function () {
   // botsing speler tegen vijand
-if (vijandX - spelerX < 50 &&) {
-  console.log ("botsing")
-}
+  if (vijandX - spelerX < 50 &&
+    vijandX - spelerX > -50 &&
+    vijandY - spelerY < 50 &&
+    vijandY - spelerY > -50
+  ) {
+    console.log("botsing")
+  }
   // botsing kogel tegen vijand
 
 };
@@ -101,13 +105,14 @@ var tekenAlles = function () {
   fill("black");
   ellipse(spelerX, spelerY, 50, 50);
 
-
-
-
-
-
   // punten en health
-
+  
+textSize(32);
+text('word', 10, 30);
+fill(0, 102, 153);
+text('word', 10, 60);
+fill(0, 102, 153, 51);
+text('word', 10, 90);
 };
 
 /**
