@@ -20,6 +20,8 @@ var spelerY = 600; // y-positie van speler
 var vijandX = 600; // x-positie van speler
 var vijandY = 200; // y-positie van speler
 
+var HP = 100; // HP van speler
+
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
 /* ********************************************* */
@@ -72,10 +74,13 @@ var verwerkBotsing = function () {
     vijandY - spelerY < 50 &&
     vijandY - spelerY > -50
   ) {
-    console.log("botsing")
+    console.log("botsing");
+    HP = HP-1;
   }
+
   // botsing kogel tegen vijand
 
+  
 };
 
 
@@ -106,13 +111,11 @@ var tekenAlles = function () {
   ellipse(spelerX, spelerY, 50, 50);
 
   // punten en health
-  
-textSize(32);
-text('word', 10, 30);
-fill(0, 102, 153);
-text('word', 10, 60);
-fill(0, 102, 153, 51);
-text('word', 10, 90);
+  fill("darkred");
+  textSize(32);
+  text("HealthPoints = " + String(HP), 10, 30);
+
+
 };
 
 /**
